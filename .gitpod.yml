@@ -1,0 +1,9 @@
+ports:
+- port: 8080
+
+tasks:
+- init: |
+    cd demo-applications/5.183-MicroProfile
+    mvn install
+  command: |
+    mvn payara-micro:start
